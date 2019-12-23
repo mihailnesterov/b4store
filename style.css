@@ -1,0 +1,336 @@
+/*
+Theme Name: b4store
+Theme URI: 
+Author: Mihail Nesterov
+Author URI: https://vk.com/mihail_nesterov
+Description: WooCommerce Bootstrap4 theme
+Version: 1.0
+*/
+
+/*
+    if your theme is child of "parent_theme_name":
+    @import url(../parent_theme_name/style.css);
+*/
+
+html {
+    margin:0!important;
+}
+
+#header nav {
+	background-image: url('assets/images/bg-flowers-2x.jpg');
+}
+
+#logo {
+	width: 220px;
+}
+
+#main-menu-container {
+	margin-top:5em;
+}
+
+#main-page-content-container,
+#catalog-page-content-container,
+#item-page-content-container,
+#page-content-container {
+	margin-top:10em;
+}
+
+.breadcrumb li a {
+	color: #008c3e;
+}
+
+.bg-kp-green {
+	background-color: #008c3e;
+}
+
+.bg-kp-dark-green {
+	background-color: #074623;
+}
+
+.bg-kp-light-green {
+	background-color: #69d498;
+}
+
+.bg-kp-yellow {
+	background-color: #f2cd13;
+}
+
+.text-kp-green {
+	color: #008c3e;
+}
+.text-kp-green:hover {
+	color: #008c3e;
+}
+
+.text-kp-dark-green {
+	color: #074623;
+}
+
+.text-kp-yellow {
+	color: #f2cd13;
+}
+
+.text-kp-underline {
+	text-decoration: underline;
+}
+
+.kp-active {
+	color: #008c3e !important;
+	text-decoration: underline;
+}
+
+/* green button */
+.btn-kp-green {
+	background-color: #008c3e;
+	border: 1px #008c3e solid;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #fff;
+	box-shadow: 3px 3px 2px rgba(0,0,0,0.1);
+}
+.btn-kp-green:hover {
+	opacity: 0.95;
+	color: #ddd;
+}
+
+/* dark green button */
+.btn-kp-dark-green {
+	background-color: #074623;
+	border: 1px #074623 solid;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #fff;
+	box-shadow: 3px 3px 2px rgba(0,0,0,0.1);
+}
+.btn-kp-dark-green:hover {
+	opacity: 0.95;
+	color: #ddd;
+}
+
+/* yellow button */
+.btn-kp-yellow {
+	background-color: #f2cd13;
+	border: 1px #f2cd13 solid;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #008c3e;
+	box-shadow: 3px 3px 2px rgba(0,0,0,0.1);
+}
+.btn-kp-yellow:hover {
+	opacity: 0.95;
+	color: #074623;
+}
+
+/* bootstrap4 menu custom style  */
+.nav .nav-item.dropdown .nav-link.dropdown-toggle {
+	color: #fff;
+}
+.nav .nav-item a {
+	font-size: 1.2em;
+}
+.nav .nav-item a:hover {
+	opacity: 0.95;
+	text-decoration: underline;
+}
+
+/*
+* bootstrap4 multilevel menu style 
+* https://forum.tamirov.ru/viewtopic.php?f=37&t=230
+*/
+.dropdown-submenu {
+	position: relative;
+}
+.dropdown-submenu>a:after {
+	color:#008c3e;
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.dropdown-submenu>.dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: 0px;
+	margin-left: 10px;
+	padding:1.5em;
+}
+
+/* hover for all img inside links */
+a img:hover {
+  opacity: 0.8;
+}
+
+#action-container {
+	background-image: url('assets/images/autumn-leafs.png');
+	/*background-color: #da7531;*/
+}
+
+.card img {
+  /*object-fit: cover;
+  height: 220px;*/
+  padding:1em;
+}
+
+.item-text p {
+	margin:0;
+	padding:0;
+	padding: 0.2em 0;
+}
+
+.wist-sep-white:after {
+	content: " ";
+    display: block;
+    height: 15px;
+    width: 100%;
+    background: url('assets/images/sep-white.jpg') center no-repeat;
+    margin-top: 15px;
+}
+
+/* Pagination: the_posts_pagination customizing */
+.pagination {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+	border-radius: .25rem;
+}
+.pagination .nav-links .page-numbers{
+	/* bootstrap rules */
+	position: relative;
+    display: inline-block;
+    padding: .5rem .75rem;
+	/*margin-left: -1px;*/
+    line-height: 1.25;
+    color: #008c3e;
+    background-color: #fff;
+	border: 1px solid #dee2e6;
+	
+	/* custom rules */
+	box-sizing: border-box;
+	width: 50px;
+	margin-right: -5px;
+	text-align: center;
+	text-decoration: none;
+}
+.pagination .nav-links .page-numbers:hover{
+	background-color: #f5f5f5;
+}
+.pagination .nav-links .page-numbers.current{
+	background-color: #008c3e;
+	color: #fff;
+	border: 1px solid #008c3e;
+}
+.pagination .nav-links .page-numbers:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.pagination .nav-links .page-numbers:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/* Footer */
+footer a {
+  color: #bbb;
+  text-decoration: underline;
+}
+
+footer .footer-block ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0.5em 0 1.5em 0;
+}
+
+footer .footer-block ul li {
+  color: #aaa;
+  line-height: 1.8;
+}
+
+footer .footer-block ul li a:hover,
+footer .footer-block ul li i:hover,
+footer #copyright a:hover {
+	color: #f5f5f5;
+}
+
+#toTop 
+{
+	width:1.9em;
+	background-color: #008c3e;
+	text-align:center;
+	padding:0.2em;
+	position:fixed;
+	bottom:0.7em;
+	right:1em;
+	cursor:pointer;
+	display:none;
+	color:#fff;
+	font-size:1.7em;
+	opacity: 0.95;
+	z-index: 999;
+	
+	-webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+#toTop:hover
+{
+	opacity: 0.8;
+}
+
+/* woocommerce custom styles */
+.added_to_cart.wc-forward {
+	/* hide link "view cart in the product cart "*/
+    display: none !important;
+}
+table.woocommerce-product-attributes.shop_attributes {
+	box-shadow: 2px 3px 2px rgba(0,0,0,0.05);
+}
+table.woocommerce-product-attributes.shop_attributes th,
+table.woocommerce-product-attributes.shop_attributes td {
+	border: 1px #f1f1f1 solid;
+	padding: 0.5em 1em;
+}
+table.woocommerce-product-attributes.shop_attributes th {
+	width: 50%;
+}
+table.woocommerce-product-attributes.shop_attributes td.woocommerce-product-attributes-item__value {
+	font-style: normal;
+	text-align: center;
+}
+table.woocommerce-product-attributes.shop_attributes td.woocommerce-product-attributes-item__value a {
+	color: #000;
+	text-decoration: none;
+	cursor: default;
+}
+
+/* order inputs bg image */
+.woocommerce ul#shipping_method li input[type="radio"] {
+    display:none;
+}
+.woocommerce ul#shipping_method li input[type="radio"] + label { 
+    background: url('assets/images/unchecked.png') no-repeat round;
+    padding-left:30px;
+    cursor: pointer;
+}
+.woocommerce ul#shipping_method li input[type="radio"]:hover + label { 
+    opacity:0.8;
+    text-decoration: underline;
+}
+.woocommerce ul#shipping_method li input[type="radio"]:checked + label {
+    background: url('assets/images/checked.png') no-repeat round;
+    padding-left:30px;
+    text-decoration: underline;
+}
+.woocommerce ul#shipping_method li input[type="radio"] + label span.woocommerce-Price-amount { 
+    color: #666;
+    padding-left: 3px;
+    padding-right: 3px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.06);
+}
+
+/* hide woocommerce-notices-wrapper */
+.woocommerce-notices-wrapper {
+	display: none;
+}
